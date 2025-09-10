@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EventSphere</title>
+	<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>EventSphere</h1>
+		<div id="auth">
+			<div class="card">
+				<h2>Signup</h2>
+				<input id="signup-name" placeholder="Name" />
+				<input id="signup-email" type="email" placeholder="Email" />
+				<input id="signup-password" type="password" placeholder="Password" />
+				<button id="btn-signup">Create Account</button>
+			</div>
+			<div class="card">
+				<h2>Login</h2>
+				<input id="login-email" type="email" placeholder="Email" />
+				<input id="login-password" type="password" placeholder="Password" />
+				<button id="btn-login">Login</button>
+			</div>
+		</div>
+
+		<div id="app" class="hidden">
+			<div class="topbar">
+				<div id="welcome"></div>
+				<button id="btn-logout">Logout</button>
+			</div>
+
+			<div class="card">
+				<h2>Create Event</h2>
+				<input id="ev-title" placeholder="Title" />
+				<textarea id="ev-desc" placeholder="Description"></textarea>
+				<input id="ev-date" type="datetime-local" />
+				<button id="btn-create">Create</button>
+				<small><!-- Placeholder: categories/filter could be added here --></small>
+			</div>
+
+			<div class="card">
+				<h2>Upcoming Events</h2>
+				<div id="events"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/app.js"></script>
+</body>
+</html>
